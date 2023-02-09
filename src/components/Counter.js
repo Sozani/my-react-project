@@ -5,7 +5,9 @@ import { useSelector, useDispatch } from "react-redux";
 const Counter = () => {
   const counter = useSelector((state) => state.counter);
   const dispatch = useDispatch();
-  const toggleCounterHandler = () => {};
+  const toggleCounterHandler = () => {
+    dispatch({ type: "toggle" });
+  };
   const incrementHandler = () => {
     dispatch({ type: "increment" });
   };
