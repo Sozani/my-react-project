@@ -4,8 +4,9 @@ import React from "react";
 const Counter = () => {
   const toggleCounterHandle = () => {};
   return (
-    <main>
+    <main className={classes.counter}>
       <h1>Redux Counter</h1>
+      <div className={classes.value}>--Counter Value--</div>
     </main>
   );
 };
