@@ -3,7 +3,11 @@ import React from "react";
 
 const Counter = () => {
   const toggleCounterHandle = () => {};
-  return <div></div>;
+  return (
+    <main>
+      <h1>Redux Counter</h1>
+    </main>
+  );
 };
 
 export default Counter;
