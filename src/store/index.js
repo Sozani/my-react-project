@@ -8,6 +8,7 @@ createSlice({
     increment() {},
     decrement() {},
     increase() {},
+    toggleCounter() {},
   },
 });
 const counterReducer = (state = initialState, action) => {
