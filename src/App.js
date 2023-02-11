@@ -5,6 +5,7 @@ import Counter from "./components/Counter";
 function App() {
   return (
     <Fragment>
+      <Header />
       <Counter />
     </Fragment>
   );
