@@ -8,8 +8,10 @@ createSlice({
     increment(state) {
       state.counter++;
     },
-    decrement() {},
-    increase() {},
+    decrement(state) {
+      state.counter--;
+    },
+    increase(state, action) {},
     toggleCounter() {},
   },
 });
