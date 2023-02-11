@@ -1,7 +1,10 @@
 import { createStore } from "redux";
 import { createSlice } from "@reduxjs/toolkit";
 const initialState = { counter: 0, showCounter: true };
-createSlice({ name: "counter" });
+createSlice({
+  name: "counter",
+  initialState,
+});
 const counterReducer = (state = initialState, action) => {
   if (action.type === "increment") {
     return {
