@@ -4,6 +4,9 @@ const initialState = { counter: 0, showCounter: true };
 createSlice({
   name: "counter",
   initialState,
+  reducers: {
+    increment() {},
+  },
 });
 const counterReducer = (state = initialState, action) => {
   if (action.type === "increment") {
