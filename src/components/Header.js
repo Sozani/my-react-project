@@ -1,6 +1,7 @@
 import classes from "./Header.module.css";
 import { useSelector } from "react-redux";
 const Header = () => {
+  const isAuth = useSelector((state) => state.auth.isAuthendicted);
   return (
     <header className={classes.header}>
       <h1>Redux Auth</h1>
